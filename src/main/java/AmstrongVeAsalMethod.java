@@ -1,10 +1,10 @@
 public class AmstrongVeAsalMethod {
     public static void main(String[] args) {
-        // isAmstrong(54748);
+         isAmstrong(54748);
 
-        //  factoriel(7);
+       factoriel(12);
 
-        asalMı(-5);
+        asalMı(17);
 
 
     }
