@@ -6,6 +6,10 @@ public class AmstrongVeAsalMethod {
 
         asalMı(17);
 
+        hipotenus(5,12);
+
+
+
 
     }
 
@@ -58,6 +62,16 @@ public class AmstrongVeAsalMethod {
             System.out.println("SAyı asal");
 
         }else   System.out.println("Sayı asal değil");
+
+    }
+
+    public static void hipotenus(double sayi1,double sayi2){
+        double hipKare=Math.pow(sayi1,2)+Math.pow(sayi2,2);
+
+        double hip=Math.sqrt(hipKare);
+
+        System.out.println("hipotenüs =   :" + hip);
+
     }
 
 }
