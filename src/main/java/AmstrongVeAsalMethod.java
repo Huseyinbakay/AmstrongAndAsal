@@ -1,17 +1,45 @@
+import java.util.Scanner;
+
 public class AmstrongVeAsalMethod {
     public static void main(String[] args) {
-         isAmstrong(54748);
+        // isAmstrong(54748);
 
-       factoriel(12);
+     //  factoriel(12);
 
-        asalMı(17);
+      //  asalMı(17);
 
-        hipotenus(5,12);
+        //hipotenus(5,12);
+
+        //kuvvetBulma();
+
+
+        kuplerToplami(10);
 
 
 
 
     }
+
+    private static void kuplerToplami( int sayi) {
+        int sum=0;
+
+        for (int i = 0; i <sayi+1 ; i++) {
+
+            sum+=i*i*i;
+
+        }
+        System.out.println("0 dan "+sayi+" a kadar olan sayışarın küpleri toplamı  "+sum);
+
+    }
+
+
+
+
+
+
+
+
+    static Scanner scan=new Scanner(System.in);
 
     public static void isAmstrong(int sayı) {
         int sum = 0;
@@ -74,4 +102,39 @@ public class AmstrongVeAsalMethod {
 
     }
 
-}
+
+    public static void kuvvetBulma(){
+        System.out.println("Lütfen taban sayıyı giriniz");
+        double a=scan.nextDouble();
+        System.out.println("Girdiğiniz sayının kaça kadar kuvvetlerini görmek istiyorsunuz");
+        int b=scan.nextInt();
+        String sum="";
+
+
+
+            for (int i = 0; i <b ; i++) {
+
+                double kuvvet=Math.pow(a,i);
+
+
+                if (kuvvet<b){
+                    sum+=kuvvet;
+                    System.out.println(sum);
+
+
+                }else{
+                   break;
+                }
+
+
+
+            }
+        }
+
+
+
+    }
+
+
+
+
